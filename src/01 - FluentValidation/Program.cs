@@ -1,5 +1,4 @@
 ﻿using _01___FluentValidation;
-using FluentValidation;
 using FluentValidation.Results;
 
 var pessoa = new Pessoa { 
