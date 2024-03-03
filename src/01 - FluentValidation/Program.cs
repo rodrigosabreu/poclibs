@@ -1,7 +1,16 @@
 ﻿using _01___FluentValidation;
+using FluentValidation;
 using FluentValidation.Results;
 
-var pessoa = new Pessoa { Nome = "João", Idade = 15, Email = "joao@example.com" };
+var pessoa = new Pessoa { 
+    Nome = "rodrigo",
+    Idade = 15, 
+    Email = "joao@example.com",
+    Endereco = new Endereco
+    {
+        Logradouro = ""
+    }
+};
 
 var validator = new PessoaValidator();
 ValidationResult results = validator.Validate(pessoa);

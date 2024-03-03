@@ -17,5 +17,7 @@ public class PessoaValidator : AbstractValidator<Pessoa>
             .NotEmpty()
             .EmailAddress()
             .WithMessage("O email não é válido.");
+
+        RuleFor(pessoa => pessoa.Endereco).SetValidator(new EnderecoValidator());
     }
 }
