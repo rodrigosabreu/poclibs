@@ -8,7 +8,8 @@ var pessoa = new Pessoa {
     Email = "joao@example.com",
     Endereco = new Endereco
     {
-        Logradouro = ""
+        Logradouro = "rua teste",
+        Cidade = "Suzano"
     }
 };
 
